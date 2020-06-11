@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-app-server
+  labels:
+    app: customer-app-server
+spec:
+  replicas:
+  selector:
+    matchLabels:
+      app: customer-app-server
+  template:
+    metadata:
+      labels:
+        app: customer-app-server
+    spec:
+      containers:
+      - name: customer-app-server
+        image: kuldeep99/customer-hazelcast:v2
+        imagePullPolicy: IfNotPresent
+        ports:
+          - name: http
+            containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: customer-app-server
+  labels:
+    app: customer-app-server
+spec:
+  selector:
+    app: customer-app-server
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 8080
