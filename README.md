@@ -50,3 +50,11 @@ kubectl get deploy
 kubectl get svc
 kubectl get pods
 ```
+
+## Scaling Customer Service
+
+Exceute this commond to scale
+
+```
+kubectl scale --replicas=2 deployment/customer
+```
