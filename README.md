@@ -4,7 +4,7 @@
 
 We will be deploying this in kubernetes cluster, so make sure kubernetes is install and cluster is ready
 
-Down the customer service and create your own image, and change the image path [here](https://github.com/kuldeepsingh99/hazelcast-embeded/blob/master/deployment/customer.yml#L19)
+Down the customer service and create your own image, and change the image path [here](https://github.com/kuldeepsingh99/hazelcast-embeded/blob/master/deployment/customer.yml#L19) and push it to your own dockerhub account or keep the image locally.
 
 
 ## Step 1 ( Creating secrets)
