@@ -42,7 +42,7 @@ Run this command to create mysql DB container
 kubectl apply -f customer.yml
 ```
 
-mysql.yml file is [here](https://github.com/kuldeepsingh99/hazelcast-embeded/blob/master/deployment/customer.yml)
+customer.yml file is [here](https://github.com/kuldeepsingh99/hazelcast-embeded/blob/master/deployment/customer.yml)
 
 check whether pods/service/deploymeny are created with these command
 ```
